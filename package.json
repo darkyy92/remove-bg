@@ -1,0 +1,22 @@
+{
+  "name": "remove-bg",
+  "version": "1.0.0",
+  "description": "Open-source clone of remove.bg using rembg",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && python3 -m pip install -r requirements.txt",
+    "start": "cd backend && npm run start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

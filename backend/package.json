@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for remove-bg clone",
+  "scripts": {
+    "dev": "python3 dev.py",
+    "start": "uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
